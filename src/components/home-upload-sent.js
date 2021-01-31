@@ -42,7 +42,7 @@ class HomeUploadSent extends Component{
 
                                     history.push(`/share/${postId}`)
 
-                                }} className={'app-button btn primary'} type={'button'}>View file</button>
+                                }} className={'app-button btn'} type={'button'}>View file</button>
                                 <button onClick={()=> {
 
                                     if(this.props.onSendAnotherFile){
