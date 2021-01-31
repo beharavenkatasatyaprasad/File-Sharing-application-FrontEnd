@@ -292,7 +292,7 @@ class HomeForm extends Component {
                   type={"submit"}
                   className={"app-button btn btn-lg btn-primary"}
                 >
-                  Send<i class="icon-paper-plane"></i>
+                  Send<i className="icon-paper-plane"></i>
                 </button>
               </div>
             </div>
