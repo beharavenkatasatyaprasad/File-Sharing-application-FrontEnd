@@ -21,7 +21,7 @@ export default class TopBar extends Component {
                   }}
                   className="user-signin-button"
                 >
-                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                  <i className="fa fa-sign-in" aria-hidden="true"></i>
                   {"  "} Sign in
                 </li>
               </ul>
