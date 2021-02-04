@@ -194,7 +194,7 @@ table {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
+	background-image: radial-gradient(circle farthest-corner at 10% 20%, #a3aff3 0%, rgba(220, 182, 232, 1) 100.2%);
 	color: #38528f;
 	font-size: 13px;
 	background-repeat: round;
@@ -247,7 +247,7 @@ a {
 	padding: 0;
 	font-size: 40px;
 	font-weight: 300;
-	letter-spacing:1px;
+	letter-spacing: 1px;
 	color: rgba(255, 255, 255, 0.9);
 }
 
@@ -676,6 +676,10 @@ a {
 }
 
 .app-top-bar {
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(7.5px);
+	-webkit-backdrop-filter: blur(8.5px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
 	color: #fff;
 	height: 50px;
 	width: 100%;
@@ -707,7 +711,7 @@ a {
 	font-size: 20px;
 	font-weight: bold;
 	letter-spacing: 2px;
-	cursor: pointer;
+	cursor: auto;
 	line-height: 50px;
 }
 
@@ -775,7 +779,7 @@ a {
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 600;
-	letter-spacing:1px;
+	letter-spacing: 1px;
 }
 
 .app-message p {
@@ -791,4 +795,10 @@ a {
 	color: #d0152e;
 }
 
+@media (max-width:1000px) {
+	.app-container{
+
+		margin-top: 4rem;
+	}
+}
 /*# sourceMappingURL=app.css.map */

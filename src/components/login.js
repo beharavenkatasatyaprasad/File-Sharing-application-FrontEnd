@@ -196,11 +196,13 @@ export default class LoginForm extends Component {
             }}
             className="app-dismiss-button btn btn-sm btn-primary"
           >
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i className="fa fa-times" aria-hidden="true"></i>
           </button>
+          <p className="text-center" style={{color:'red '}}>Under Construction !!!</p>
           <h2 className="form-title">{title}</h2>
           <form onSubmit={this._onSubmit}>
             {message ? (
+              
               <div className="app-message">
                 <p className={message.type}>{message.message}</p>
               </div>
