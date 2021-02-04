@@ -66,6 +66,7 @@ class HomeForm extends Component {
   }
 
   _isEmail(emailAddress) {
+    // eslint-disable-next-line
     const emailRegex = /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
     return emailRegex.test(emailAddress);

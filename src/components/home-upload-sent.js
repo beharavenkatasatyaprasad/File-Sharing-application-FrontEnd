@@ -5,11 +5,6 @@ import {history} from "../history";
 
 class HomeUploadSent extends Component{
 
-    constructor(props){
-        super(props);
-
-    }
-
     render(){
 
         const {data} = this.props;

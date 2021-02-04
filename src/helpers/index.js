@@ -3,6 +3,7 @@ import _ from 'lodash'
 
 const KB = 1024;
 const MB = KB * KB;
+// eslint-disable-next-line
 const TB =  KB * KB * KB;
 
 

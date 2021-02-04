@@ -32,7 +32,7 @@ export default class LoginForm extends Component {
   }
 
   _formValidation(fieldsToValidate = [], callback = () => {}) {
-    const { isLogin, user } = this.state;
+    const {  user } = this.state;
 
     const allFields = {
       name: {
@@ -123,7 +123,7 @@ export default class LoginForm extends Component {
     );
   }
   _onSubmit(event) {
-    const { isLogin, user } = this.state;
+    const { isLogin } = this.state;
     event.preventDefault();
 
     let fieldNeedToValidate = ["email", "password"];

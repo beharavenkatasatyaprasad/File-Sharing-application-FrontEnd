@@ -12,7 +12,7 @@ class Header extends Component{
             <div className={'app-site-info text-center'}>
                 <div className={'site-title m-0'}>Share Your Files.</div>
                 <div className={'site-slogan'}>Secure. Safe. Free.</div>
-                <div className={'site-title'}><img src={pic} height="320" alt = "image" /></div>
+                <div className={'site-title'}><img src={pic} height="320" alt = "welcomepic" /></div>
               
             </div>
         </div>)
