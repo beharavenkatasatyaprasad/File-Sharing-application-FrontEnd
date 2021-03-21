@@ -4,7 +4,6 @@ import classNames from "classnames";
 import { upload } from "../helpers/upload";
 import PropTypes from "prop-types";
 
-
 class HomeForm extends Component {
   constructor(props) {
     super(props);
@@ -12,9 +11,9 @@ class HomeForm extends Component {
     this.state = {
       form: {
         files: [],
-        to: "buddy@buddy.com",
-        from: "otherbuddy@otherbuddy.com",
-        message: "Hey buddy, Here I'm sending file for you..",
+        to: "",
+        from: "",
+        message: "",
       },
 
       errors: {

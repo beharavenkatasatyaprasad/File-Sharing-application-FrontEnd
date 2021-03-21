@@ -139,7 +139,7 @@ a {
 
 	.app-container .app-content {
 		text-align: left;
-		color: #d0152e;
+		color: #1900ff;
 	}
 }
 
@@ -155,8 +155,6 @@ a {
 @media (min-width: 768px) {
 	.app-card {
 		width: 100%;
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
 	}
 }
 
@@ -234,8 +232,8 @@ a {
 .app-form-item input[type='text'],
 .app-form-item textarea {
 	width: 100%;
-	border: 1px solid #e44a4a;
-	outline: 0 none;
+	border: 1px solid #1900ff;
+	/* outline: 0 none; */
 	padding: 8px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -260,7 +258,7 @@ a {
 	border-radius: 1px solid white;
 	letter-spacing: 2.8px;
 	padding: 10px 15px;
-	background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+	background-image: linear-gradient(to right, #636a81 0%, #125db3  51%, #4a27e5  100%);
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;

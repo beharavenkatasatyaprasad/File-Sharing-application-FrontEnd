@@ -55,7 +55,6 @@ class View extends Component {
 
         const files = _.get(post, 'files', []);
         const totalSize = this.getTotalDownloadSize();
-        const postId = _.get(post, '_id', null);
         return (
             <div className={'app-page-download'}>
                 <div className={'app-card app-card-download'}>
@@ -89,13 +88,7 @@ class View extends Component {
 
                             </div>
 
-                            <div className={'app-download-actions app-form-actions'}>
-
-                                <a href={`${apiUrl}/posts/${postId}/download`} className={'app-button btn'}>Download All</a>
-                                <button className={'app-button btn'} type={'button'}>Share</button>
-                            </div>
                         </div>
-
 
                     </div>
 
