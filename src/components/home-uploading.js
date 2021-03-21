@@ -19,15 +19,10 @@ class HomeUploading extends Component{
             total: 0,
             percentage: 10,
         }
-
-
-
     }
 
     componentDidMount(){
         const {data} = this.props;
-
-
 
         this.setState({
             data: data
@@ -48,14 +43,8 @@ class HomeUploading extends Component{
 
 
                 const currentTime = new Date();
-                let diffTimeBetweenStartAndCurrent = currentTime - this.state.startTime; // this is miliseconds. not Second.
+                let diffTimeBetweenStartAndCurrent = currentTime - this.state.startTime; 
 
-                //Formular
-               /* 1 milisecond = X ?
-                diffTimeBetweenStartAndCurrent = loaded;
-
-
-                so: x = loaded * 1 /diffTimeBetweenStartAndCurrent = */
 
                if(diffTimeBetweenStartAndCurrent === 0){
                    diffTimeBetweenStartAndCurrent = 1;
@@ -64,8 +53,6 @@ class HomeUploading extends Component{
                const speedPerOneMilisecond = ((loaded - this.state.lastLoaded) / diffTimeBetweenStartAndCurrent);
 
                const speedPerSecond = speedPerOneMilisecond * 1000;
-
-
 
                 this.setState({
                     speedUpload: speedPerSecond,
