@@ -37,9 +37,6 @@ export const upload = (form, callback = () => {}) => {
 
     axios.post(url, data, config).then((response) => {
 
-
-        // upload successful.
-
         return callback({
 
             type: 'success',

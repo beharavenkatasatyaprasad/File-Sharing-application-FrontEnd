@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "../components/header";
 import HomeForm from "../components/home-form";
 import HomeUploading from "../components/home-uploading";
 import HomeUploadSent from "../components/home-upload-sent";
@@ -81,7 +80,6 @@ class Home extends Component {
   render() {
     return (
       <div className={"app-container"}>
-        <Header />
         <div className={"app-content"}>{this._renderComponent()}</div>
       </div>
     );

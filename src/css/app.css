@@ -1,136 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,800";
 
-/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 @font-face {
 	font-family: "fileapp";
@@ -140,17 +9,6 @@ table {
 	font-style: normal;
 }
 
-[data-icon]:before {
-	font-family: "fileapp" !important;
-	content: attr(data-icon);
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -194,7 +52,7 @@ table {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-image: radial-gradient(circle farthest-corner at 10% 20%, #a3aff3 0%, rgba(220, 182, 232, 1) 100.2%);
+	background-color: #000;
 	color: #38528f;
 	font-size: 13px;
 	background-repeat: round;
@@ -226,23 +84,23 @@ a {
 	padding: 20px 0 0 0;
 }
 
-.app-container .app-header {
+.app-container  {
 	padding-bottom: 30px;
 	text-align: center;
 }
 
-.app-container .app-header .app-site-info {
+.app-container .app-site-info {
 	color: #fff;
 }
 
-.app-container .app-header .app-site-info h1 {
+.app-container .app-site-info h1 {
 	margin: 0;
 	padding: 0;
 	font-size: 60px;
 	font-weight: 800;
 }
 
-.app-container .app-header .app-site-info .site-title {
+.app-container  .app-site-info .site-title {
 	margin: 20px 0 0 0;
 	padding: 0;
 	font-size: 40px;
@@ -252,7 +110,7 @@ a {
 }
 
 
-.app-container .app-header .app-site-info .site-slogan {
+.app-container  .app-site-info .site-slogan {
 	margin-top: 5px;
 	padding: 0;
 	letter-spacing: 3px;
@@ -262,19 +120,19 @@ a {
 }
 
 @media (max-width: 768px) {
-	.app-container .app-header .app-site-info .site-slogan {
+	.app-container .app-site-info .site-slogan {
 		display: none;
 	}
 }
 
 @media (min-width: 992px) {
-	.app-container .app-header {
-		float: left;
-		text-align: left;
+	.app-container {
+		/* float: left;
+		text-align: left; */
 	}
 
 	.app-container .app-content {
-		float: right;
+		align-items: center;
 	}
 }
 

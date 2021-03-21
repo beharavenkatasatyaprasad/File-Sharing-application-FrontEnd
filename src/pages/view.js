@@ -32,7 +32,7 @@ class View extends Component {
 
 
         }).catch((err) => {
-            console.log("an error fetching download data", err);// we can redirect user to not found page later
+            console.log("an error fetching download data", err);
         })
     }
 
