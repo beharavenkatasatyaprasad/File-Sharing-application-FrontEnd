@@ -1,5 +1,11 @@
 # File-Sharing-application-FrontEnd
 
+<p align="center">
+    <img src="https://github.com/beharavenkatasatyaprasad/File-Sharing-application-FrontEnd/blob/master/public/b.gif">  
+</p>
+
+### [Live Demo](https://filesharingapp.netlify.app/)
+
 ### About:
 
 A File sharing application to share the files developed using the whole MERN stack and AWS S3 bucket.
