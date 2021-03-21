@@ -3,7 +3,6 @@ import _ from 'lodash'
 import {getDownloadInfo} from "../helpers/download";
 import {apiUrl} from "../config";
 import {betterNumber} from "../helpers";
-import {history} from "../history";
 
 class View extends Component {
 
@@ -59,13 +58,6 @@ class View extends Component {
         const postId = _.get(post, '_id', null);
         return (
             <div className={'app-page-download'}>
-                <div className={'app-top-header'}>
-                    <h1 onClick={() => {
-
-                        history.push('/')
-
-                    }}><i className={'icon-paper-plane'} /> SHARE</h1>
-                </div>
                 <div className={'app-card app-card-download'}>
 
                     <div className={'app-card-content'}>

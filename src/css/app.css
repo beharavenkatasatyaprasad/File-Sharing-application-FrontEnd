@@ -119,6 +119,11 @@ a {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.app-form-item label{
+	font-weight: 700 !important;
+
+}
+
 @media (max-width: 768px) {
 	.app-container .app-site-info .site-slogan {
 		display: none;
@@ -127,12 +132,14 @@ a {
 
 @media (min-width: 992px) {
 	.app-container {
-		/* float: left;
-		text-align: left; */
+		margin: auto;
+		width: 50%;
+		padding: 10px;
 	}
 
 	.app-container .app-content {
-		align-items: center;
+		text-align: left;
+		color: #d0152e;
 	}
 }
 
@@ -147,7 +154,7 @@ a {
 
 @media (min-width: 768px) {
 	.app-card {
-		width: 350px;
+		width: 100%;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 	}
@@ -225,11 +232,9 @@ a {
 }
 
 .app-form-item input[type='text'],
-.app-form-item input[type='email'],
-.app-form-item input[type='password'],
 .app-form-item textarea {
 	width: 100%;
-	border: 1px solid #e0e0e0;
+	border: 1px solid #e44a4a;
 	outline: 0 none;
 	padding: 8px;
 	-webkit-border-radius: 5px;
@@ -237,16 +242,6 @@ a {
 	border-radius: 5px;
 }
 
-.app-form-item input[type='text']:focus,
-.app-form-item input[type='text'] :active,
-.app-form-item input[type='email']:focus,
-.app-form-item input[type='email'] :active,
-.app-form-item input[type='password']:focus,
-.app-form-item input[type='password'] :active,
-.app-form-item textarea:focus,
-.app-form-item textarea :active {
-	outline: 0 none;
-}
 
 .app-form-item textarea {
 	min-height: 50px;
@@ -262,10 +257,10 @@ a {
 	font-weight: 600;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 1px solid white;
 	letter-spacing: 2.8px;
 	padding: 10px 15px;
-	background-image: linear-gradient(to right, #4b6cb7 0%, #182848 51%, #4b6cb7 100%);
+	background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;
@@ -274,13 +269,11 @@ a {
 
 .app-button:hover {
 	background-position: right center;
-	/* change the direction of the change here */
 	color: #fff;
 	text-decoration: none;
 }
 
 .app-form-actions .app-button.primary {
-	/* background: #1b65f6; */
 	color: #fff;
 }
 
@@ -529,134 +522,9 @@ a {
 	margin: 10px 0;
 }
 
-.app-top-header h1 {
-	cursor: pointer;
-}
-
-.app-top-bar {
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(7.5px);
-	-webkit-backdrop-filter: blur(8.5px);
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	color: #fff;
-	height: 50px;
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1000;
-}
-
-.app-top-bar .app-top-bar-inner {
-	max-width: 1000px;
-	margin: 0 auto;
-	display: flex;
-}
-
-.app-top-bar .app-top-bar-inner .app-top-bar-left {
-	flex-grow: 1;
-}
-
-.app-top-bar .app-top-bar-inner .app-top-bar-right {
-	text-align: right;
-}
-
-.app-top-bar .app-top-bar-inner .app-top-bar-right .app-top-bar-right-inner {
-	display: flex;
-}
-
-.app-top-bar .site-name {
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 2px;
-	cursor: auto;
-	line-height: 50px;
-}
-
-.app-top-bar .user-profile-picture {
-	padding-top: 10px;
-}
-
-.app-top-bar .user-profile-picture img {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-}
-
-.app-top-bar .user-profile-menu {
-	margin: 0;
-	padding: 0;
-	font-weight: 600;
-	list-style: none;
-}
-
-.app-top-bar .user-profile-menu li {
-	padding: 0 10px;
-	line-height: 50px;
-}
-
-.app-login-form {
-	background: #fff;
-	position: fixed;
-	right: 0;
-	top: 0;
-	min-width: 300px;
-	bottom: 0;
-	z-index: 1001;
-}
-
-.app-login-form .form-title {
-	padding: 20px 0;
-	font-size: 25px;
-	font-weight: 600;
-	text-align: center;
-	display: block;
-}
-
-.app-login-form .app-login-form-inner {
-	position: relative;
-	padding: 40px;
-}
-
-.app-login-form .app-form-actions button {
-	margin: 10px 0;
-}
-
-.app-login-form .app-form-description {
-	text-align: center;
-}
-
-.app-login-form .app-dismiss-button {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	z-index: 1002;
-}
-
-.user-signin-button {
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 600;
-	letter-spacing: 1px;
-}
-
-.app-message p {
-	padding: 10px;
-	border: 1px solid #1b65f6;
-	border-radius: 5px;
-	margin: 10px 0;
-	color: #1b65f6;
-}
-
-.app-message p.error {
-	border-color: #d0152e;
-	color: #d0152e;
-}
-
 @media (max-width:1000px) {
 	.app-container{
 
 		margin-top: 4rem;
 	}
 }
-/*# sourceMappingURL=app.css.map */

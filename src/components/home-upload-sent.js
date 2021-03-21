@@ -29,7 +29,7 @@ class HomeUploadSent extends Component{
 
                             <div className={'app-upload-sent-message app-text-center'}>
                                 <h2>Files sent!</h2>
-                                <p>We're sent an email to {to} with a download link. The link will expire in 30 days.</p>
+                                <p>We're sent an email to {to} with download link. The link will expire in 30 days.</p>
                             </div>
 
                             <div className={'app-upload-sent-actions app-form-actions'}>
