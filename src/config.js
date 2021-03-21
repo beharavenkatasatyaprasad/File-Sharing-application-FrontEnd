@@ -1,1 +1,1 @@
-export const apiUrl =  'https://file-sharing-application.herokuapp.com/api';
+export const apiUrl =  'https://filesharingbackend.herokuapp.com/api';
